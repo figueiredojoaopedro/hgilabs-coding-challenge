@@ -149,7 +149,9 @@ const saveTranscription = (words: Array<WordsResponseAssemblyAI>): string => {
     words.forEach((word) => {
       if (word.speaker !== currentSpeaker) {
         currentSpeaker = word.speaker;
-        transcript += `\n\nSpeaker ${word.speaker}: ${word.text}`;
+        transcript += `\n\n${word.speaker === "B" ? "AGENT" : "CALLER"}: ${
+          word.text
+        }`;
       } else {
         transcript += ` ${word.text}`;
       }
