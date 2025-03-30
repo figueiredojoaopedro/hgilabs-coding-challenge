@@ -4,7 +4,8 @@
   "description": "## Requirements:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx ts-node implementation.ts"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/figueiredojoaopedro/hgilabs-coding-challenge#readme",
   "dependencies": {
+    "assemblyai": "^4.9.0",
     "axios": "^1.8.4",
     "dotenv": "^16.4.7",
     "fs": "^0.0.1-security"
